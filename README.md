@@ -1,12 +1,13 @@
 # PruebaTecnica-QATester
-Repositorio de Prueba de QA para ACME
+## Repositorio de Prueba de QA para ACME
 Este repositorio contiene los casos de prueba y la automatización necesaria para la prueba de control de calidad (QA) de la plataforma de ACME. La prueba de QA se centra en garantizar la funcionalidad, fiabilidad y rendimiento del sistema antes de su lanzamiento.
 
 ## Descripción
 La prueba de QA para ACME implica una combinación de pruebas manuales y automatizadas para garantizar que la plataforma cumpla con los estándares de calidad esperados. Incluye pruebas exhaustivas en diferentes aspectos de la plataforma, como la funcionalidad del portal de ecommerce, el panel de administración, la búsqueda de productos y el rendimiento del sitio web bajo carga.
 
 ## Contenido del Repositorio
-Casos de prueba manuales: Documentación detallada de los casos de prueba que deben realizarse manualmente para garantizar el correcto funcionamiento de la plataforma.
+#### Casos de prueba manuales: 
+Documentación detallada de los casos de prueba que deben realizarse manualmente para garantizar el correcto funcionamiento de la plataforma.
 
 #### Automatización de pruebas: 
 Código y scripts necesarios para automatizar ciertos casos de prueba, como la búsqueda de productos en el sitio web.
