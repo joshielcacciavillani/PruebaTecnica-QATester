@@ -14,13 +14,6 @@ Código y scripts necesarios para automatizar ciertos casos de prueba, como la b
 #### Prueba de carga: 
 Herramientas y configuraciones utilizadas para realizar pruebas de carga en el sitio web, simulando múltiples usuarios y evaluando el rendimiento del sistema bajo diferentes niveles de carga.
 
-#### Resultados de pruebas: 
-Registro de los resultados de las pruebas realizadas, incluyendo detalles sobre cualquier problema encontrado y su resolución.
-
 #### Documentación adicional: 
 Información complementaria sobre la configuración del entorno de prueba, instrucciones para ejecutar pruebas, y cualquier otra documentación relevante.
 
-#### Entrega
-El enlace a este repositorio se proporcionará por correo electrónico para su evaluación. Este repositorio servirá como referencia para el equipo de desarrollo y calidad durante el ciclo de vida del proyecto, asegurando que se mantenga la calidad del producto en todo momento.
-
-Este repositorio de GitHub contiene los recursos necesarios para llevar a cabo la prueba de QA para la plataforma de ACME, incluyendo pruebas manuales, automatizadas y de carga, así como documentación adicional para su referencia.
