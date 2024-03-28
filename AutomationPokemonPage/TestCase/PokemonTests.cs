@@ -1,6 +1,6 @@
 using AutomationPokemonPage.PageObject;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 
 namespace AutomationPokemonPage.TestCase {
     [TestFixture]
@@ -9,16 +9,17 @@ namespace AutomationPokemonPage.TestCase {
 
         [SetUp]
         public void BeforeTest() {
-            string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            Driver = new ChromeDriver(path + @"\Drivers\");
-            Driver.Navigate().GoToUrl("https://www.pokemon.com/es/pokedex/");
+            var options = new FirefoxOptions();
+            Driver = new FirefoxDriver(options);
+            //string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+            //Driver = new ChromeDriver(path + @"\Drivers\");
+            Driver.Navigate().GoToUrl("https://sg.portal-pokemon.com/play/pokedex");
         }
 
         [Test]
         public void SearchPokemon() {
             //TODO: sacar esta info del config
             PokedexPage pokedexPage = new(Driver);
-            _ = pokedexPage.SearchPokemon("charmander");
             pokedexPage.SearchPokemon("charmander");
         }
 

@@ -4,9 +4,9 @@ namespace AutomationPokemonPage.PageObject {
     public class PokedexPage {
         protected IWebDriver Driver;
 
-        protected By SearchInput = By.Id("searchInput");
-        protected By SearchButton = By.Id("search");
-        protected By pokedex = By.ClassName("pokedex");
+        protected By SearchInput = By.Id("search_input");
+        protected By SearchButton = By.XPath("//*[@class='pokemon-search__form--button']");
+        protected By pokedex = By.XPath("//*[@class='pokemon-list']");
 
         public PokedexPage(IWebDriver driver) {
             Driver = driver;

@@ -5,7 +5,8 @@ namespace AutomationPokemonPage.PageObject {
     public class PokemonCard {
         protected IWebDriver Driver;
 
-        protected By Pokemon = By.XPath("//div[@class='pokemon-info']/h5");
+        protected By Pokemon = By.CssSelector("span.pokemon-list--box__name.size-22");
+
         public PokemonCard(IWebDriver driver, String pokemonName) {
             Driver = driver;
             if (!CheckPokemonName(pokemonName))
@@ -17,10 +18,15 @@ namespace AutomationPokemonPage.PageObject {
         }
 
         public bool CheckPokemonName(String pokemonName) {
-            if (Driver.FindElement(Pokemon).Text.Equals(pokemonName.ToLower(), StringComparison.CurrentCultureIgnoreCase)) {
+            IWebElement pokemonElement = Driver.FindElement(Pokemon);
+            string actualPokemonName = pokemonElement.Text.ToLower();
+
+            if (actualPokemonName == pokemonName.ToLower()) {
+                Console.WriteLine($"El pokemon es {pokemonName}");
                 return true;
             }
             else {
+                Console.WriteLine("No se encuentra el pokemon.");
                 return false;
             }
         }
